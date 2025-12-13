@@ -2,6 +2,10 @@
 
 Event site for the From Mind to Machine alumni mentorship series. The app pairs a React + Vite front end with an Express + MongoDB API for user management and article-driven content.
 
+![From Mind to Machine event poster](client/public/images/alumni-event-cover.png)
+
+![Cyrus Robles — Resource Person](client/public/images/cyrus-robles.png)
+
 ## What's inside
 - `client/` React single-page app (home, about, articles, detail, 404).
 - `server/` Express API for users and articles with JWT-based login.
@@ -15,9 +19,9 @@ Event site for the From Mind to Machine alumni mentorship series. The app pairs 
 - `server/.env`
   - `MONGO_URI=<your Mongo connection string>`
   - `JWT_SECRET=<token signing secret>`
-  - `PORT=8000` (optional)
+  - `PORT=5000` (optional)
 - `client/.env`
-  - `VITE_LOCAL_HOST=http://localhost:8000` (or your deployed API URL)
+  - `VITE_LOCAL_HOST=http://localhost:5000` (or your deployed API URL)
 
 ## Local setup
 1) Backend (API)
