@@ -24,7 +24,7 @@ nav {
   gap: 10px;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: var(--text);
+  color: var(--color-text-primary);
 }
 
 .logo img {
@@ -52,7 +52,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background: #f1f5f9;
-  color: var(--text);
+  color: var(--color-text-primary);
 }
 
 @media (max-width: 720px) {

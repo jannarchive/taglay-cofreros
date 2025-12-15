@@ -9,18 +9,18 @@ function HomePage() {
     <div className="page">
       <section className="hero">
         <div className="hero-copy">
-          <p className="eyebrow">Frontend studio</p>
-          <h1>Polished UI patterns without the corporate beige.</h1>
+          <p className="eyebrow">Taglay studio</p>
+          <h1>Build better with React</h1>
           <p className="lead">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec euismod posuere a aliquam
-            mattis ac sed nibh tincidunt non ultrices.
+            Insights and practical guides to help you understand React-one component at a time. 
+            Level up your React skills today!
           </p>
           <div className="hero-actions">
             <Link to="/articles" className="button-link primary">
               Browse articles
             </Link>
             <Link to="/about" className="button-link secondary">
-              About the team
+              About us
             </Link>
           </div>
           <div className="stats">
@@ -53,37 +53,37 @@ function HomePage() {
         </div>
       </section>
 
-      <section>
+      <section className="feature-section">
         <div className="section-heading">
           <div>
             <p className="eyebrow">Highlights</p>
-            <h2>What you get inside.</h2>
+            <h2>What you will learn here</h2>
           </div>
           <span className="muted">Clean patterns, real-world snippets.</span>
         </div>
         <div className="feature-grid">
           <div className="feature-card">
-            <div className="feature-icon">UI</div>
-            <h3>Layout recipes</h3>
+            <div className="feature-icon"></div>
+            <h3>Beginner-friendly explanations</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac sed augue sem sit bibendum
-              at dui varius.
+              Clear explanations that make React easier to understand, 
+              even if you are just getting started.
             </p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">FE</div>
+            <div className="feature-icon"></div>
             <h3>React clarity</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultricies suspendisse
-              pellentesque auctor habitant amet.
+              Break down React concepts into small, 
+              understandable components. Learn how and why they work together.
             </p>
           </div>
           <div className="feature-card">
-            <div className="feature-icon">UX</div>
-            <h3>Microcopy cues</h3>
+            <div className="feature-icon"></div>
+            <h3>Practical real-world guides</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis nisl ultricies
-              dignissim vulputate est.
+              Follow step-by-step tutorials that show how React 
+              is actually used in real projects.
             </p>
           </div>
         </div>
@@ -95,7 +95,7 @@ function HomePage() {
             <p className="eyebrow">Articles</p>
             <h2>Latest reads.</h2>
           </div>
-          <Link to="/articles" className="button-link secondary">
+          <Link to="/articles" className="button-link primary">
             View all
           </Link>
         </div>

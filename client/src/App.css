@@ -84,35 +84,83 @@
   color: var(--muted);
 }
 
+.feature-section {
+  display: grid;
+  gap: 28px;
+}
+
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
 }
 
 .feature-card {
-  padding: 18px;
-  border-radius: var(--radius);
-  border: 1px solid var(--border);
-  background: #f7fbff;
-  box-shadow: 0 10px 20px rgba(14, 165, 233, 0.08);
-  display: grid;
-  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-1px);
 }
 
 .feature-card h3 {
   margin: 0;
+  font-size: 1.3rem;
+  color: var(--color-text-primary);
+  line-height: 1.4;
+}
+
+.feature-card p {
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+  margin: 0;
 }
 
 .feature-icon {
-  width: 42px;
-  height: 42px;
+  width: 64px;
+  height: 64px;
   border-radius: 12px;
   display: grid;
   place-items: center;
-  background: #e0f2fe;
-  color: #0284c7;
-  font-weight: 700;
+  background: linear-gradient(100deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  box-shadow: 0 8px 24px rgba(0, 167, 211, 0.18);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.feature-icon::before {
+  content: '';
+  font-size: 2rem;
+  display: block;
+}
+
+.feature-card:nth-child(1) .feature-icon::before {
+  content: '💡';
+}
+
+.feature-card:nth-child(2) .feature-icon::before {
+  content: '🧩';
+}
+
+.feature-card:nth-child(3) .feature-icon::before {
+  content: '🔧';
+}
+
+.feature-card:hover .feature-icon {
+  box-shadow: 0 12px 32px rgba(0, 167, 211, 0.28);
+  transform: scale(1.08);
 }
 
 .articles-section {
@@ -130,7 +178,7 @@
   padding: 18px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: var(--shadow);
   box-shadow: var(--shadow);
 }
 
