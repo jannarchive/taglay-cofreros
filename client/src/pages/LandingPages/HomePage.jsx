@@ -6,54 +6,57 @@ function HomePage() {
   const featuredArticles = articles.slice(0, 3);
 
   return (
-    <div className="page">
+    <>
       <section className="hero">
-        <div className="hero-copy">
-          <p className="eyebrow">Taglay studio</p>
-          <h1>Build better with React</h1>
-          <p className="lead">
-            Insights and practical guides to help you understand React-one component at a time. 
-            Level up your React skills today!
-          </p>
-          <div className="hero-actions">
-            <Link to="/articles" className="button-link primary">
-              Browse articles
-            </Link>
-            <Link to="/about" className="button-link secondary">
-              About us
-            </Link>
-          </div>
-          <div className="stats">
-            <div className="stat">
-              <strong>{articles.length}+</strong>
-              <span>React breakdowns</span>
-            </div>
-            <div className="stat">
-              <strong>3</strong>
-              <span>UI micro-guides</span>
-            </div>
-            <div className="stat">
-              <strong>Zero</strong>
-              <span>fluff allowed</span>
-            </div>
-          </div>
-        </div>
-
-        <div className="hero-visual">
-          <div className="hero-panel">
-            <img
-              src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
-              alt="Design desk with colorful UI elements"
-            />
-            <p className="muted">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices in velit varius
-              rutrum vitae arcu.
+        <div className="hero-container">
+          <div className="hero-copy">
+            <p className="eyebrow">Taglay studio</p>
+            <h1>Build better <br /> with React</h1>
+            <p className="lead">
+              Insights and practical guides to help you understand React-one component at a time. 
+              Level up your React skills today!
             </p>
+            <div className="hero-actions">
+              <Link to="/articles" className="button-link primary">
+                Browse articles
+              </Link>
+              <Link to="/about" className="button-link secondary">
+                About us
+              </Link>
+            </div>
+            <div className="stats">
+              <div className="stat">
+                <strong>{articles.length}+</strong>
+                <span>React breakdowns</span>
+              </div>
+              <div className="stat">
+                <strong>3</strong>
+                <span>UI micro-guides</span>
+              </div>
+              <div className="stat">
+                <strong>Zero</strong>
+                <span>fluff allowed</span>
+              </div>
+            </div>
+          </div>
+
+          <div className="hero-visual">
+            <div className="hero-panel">
+              <img
+                src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1200&q=80"
+                alt="Design desk with colorful UI elements"
+              />
+              <p className="muted">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ultrices in velit varius
+                rutrum vitae arcu.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="feature-section">
+      <main className="main-content">
+        <section className="feature-section">
         <div className="section-heading">
           <div>
             <p className="eyebrow">Highlights</p>
@@ -87,9 +90,9 @@ function HomePage() {
             </p>
           </div>
         </div>
-      </section>
+        </section>
 
-      <section className="articles-section">
+        <section className="articles-section">
         <div className="section-heading">
           <div>
             <p className="eyebrow">Articles</p>
@@ -114,8 +117,9 @@ function HomePage() {
             </div>
           ))}
         </div>
-      </section>
-    </div>
+        </section>
+      </main>
+    </>
   );
 }
 

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600;700&family=Figtree:wght@400;500;600;700&display=swap');
 
 :root {
   /* Primary Colors */
@@ -30,10 +30,9 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(160% 200% at 30% 25%, #EFECE3 10%, #198bc8 95%, #FDF5AA 100%),
-    radial-gradient(100% 80% at 40% 40%, #ffeedd 0%, rgba(255, 255, 255, 0) 60%);
+    radial-gradient(150% 100% at 30% 35%, #EFECE3 10%, #198bc8 95%, #FDF5AA 100%);
   color: var(--color-text-primary);
-  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-family: 'Figtree', system-ui, -apple-system, 'Segoe UI', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -45,13 +44,44 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4 {
+h1 {
   margin: 0;
   font-family: 'Fraunces', 'Georgia', serif;
   font-weight: 700;
   color: var(--color-text-primary);
   line-height: 1.2;
   letter-spacing: -0.02em;
+  font-size: 4rem;
+}
+
+h2 {
+  margin: 0;
+  font-family: 'Fraunces', 'Georgia', serif;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-size: 2rem;
+}
+
+h3 {
+  margin: 0;
+  font-family: 'Fraunces', 'Georgia', serif;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-size: 1.5rem;
+}
+
+h4 {
+  margin: 0;
+  font-family: 'Fraunces', 'Georgia', serif;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-size: 1rem;
 }
 
 p {
@@ -90,7 +120,7 @@ img {
   font-size: 0.75rem;
   color: var(--color-primary-dark);
   font-weight: 700;
-  margin-bottom: 12px;
+  margin-bottom: 12px;;
 }
 
 .lead {
