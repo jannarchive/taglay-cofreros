@@ -1,53 +1,67 @@
 const articles = [
     {
-        name: "react-props-and-styling", // String
-        title: "Understanding React Props and Styling", //String
-        // List --> String
+        name: "every-stray-has-story",
+        title: "Every Stray Has a Story: Understanding Life on the Streets",
         content: [
-            "Props (short for properties) allow you to pass data between components. They are read-only and essential for component reusability.",
-            "Example:\nfunction Welcome(props) {\n  return <h1>Hello, {props.name}!</h1>;\n}",
-            "React supports multiple styling approaches: inline styles, CSS files, CSS Modules, and styled-components.",
-            "Inline Style Example:\nconst style = { color: 'blue' };\n<p style={style}>Styled Text</p>"
+            "If you see a stray dog or cat on the street, it might look like they are used to being there. But most strays were not born on the streets. Many were once owned, lost, or left behind.",
+            "Life on the streets is hard. Stray animals face hunger, sickness, bad weather, and danger from cars or people. Some are afraid of humans because they have been hurt before.",
+            "In the Philippines, the Animal Welfare Act of 1998 (RA 8485) says that animals should be treated kindly and protected from pain and abuse.",
+            "They are living beings that deserve care and respect. By learning about their stories, we can help make their lives better."
         ]
     },
     {
-        name: "react-functional-components",
-        title: "React Functional Components",
+        name: "the-pawradise-project-care-awareness",
+        title: "The Pawradise Project: Starting with Care and Awareness",
         content: [
-            "Functional components are simple JavaScript functions that return JSX.",
-            "They are stateless by default but can use hooks like useState and useEffect.",
-            "Example:\nfunction HelloWorld() {\n  return <h1>Hello, World!</h1>;\n}",
-            "They are preferred in modern React apps for simplicity and performance."
+            "This project is a space to learn, read, and understand the lives of stray dogs and cats.",
+            "Through articles and guides, the Pawradise Project hopes to help people who want to care, but do not know where to begin.",
+            "The Pawradise Project advocates for a paradise for paws, a better world for stray dogs and cats where they are safe, healthy, and loved."
         ]
     },
     {
-        name: "react-component-lifecycle",
-        title: "React Component Lifecycle",
+        name: "why-kindness-to-animals-is-legal-duty",
+        title: "Why kindness to animals is also a legal duty",
         content: [
-            "Class components have lifecycle methods: mounting, updating, unmounting.",
-            "Key methods include: componentDidMount, componentDidUpdate, componentWillUnmount.",
-            "Functional components use the useEffect hook to mimic lifecycle behavior.",
-            "Example:\nuseEffect(() => {\n  console.log('Mounted');\n  return () => console.log('Unmounted');\n}, []);"
+            "Animal welfare is not just about being kind because it is also about following the law. The Animal Welfare Act of 1998 (RA 8485) exists to protect animals from abuse, cruelty, and neglect.",
+            "It covers all animals such as pets, farm and working animals, animals used in research, and stray and abandoned animals.",
+            "This law reminds us that animals should not be hurt or killed cruelly and humans have a responsibility to support and protect them.",
+            "Understanding this makes people realize that caring for stray animals is not optional. It is the right thing to do."
         ]
     },
     {
-        name: "react-routing-basics",
-        title: "React Router Basics",
+        name: "helping-stray-dogs-cats",
+        title: "Helping stray dogs and cats does not have to be hard",
         content: [
-            "React Router allows navigation between pages without a page reload.",
-            "Set up routes using BrowserRouter, Routes, and Route components.",
-            "Example:\n<Routes>\n  <Route path=\"/\" element={<Home />} />\n  <Route path=\"/about\" element={<About />} />\n</Routes>",
-            "Use Link component for navigation:\n<Link to=\"/about\">About</Link>"
+            "Many people want to help stray dogs and cats but feel unsure where to start.",
+            "The good news is, you do not need money or special skills to help.",
+            "The following are some simple ways you can make a difference: giving clean water, especially on hot days, sharing leftover food safely, and spreading awareness about stray animal welfare in your community.",
+            "You do not have to rescue every animal you see.",
+            "Even simple kindness is sometimes enough to keep them alive."
         ]
     },
     {
-        name: "react-state-management",
-        title: "Managing State in React",
+        name: "what-to-do-if-you-see-injured-stray-animal",
+        title: "What to do if you see an injured stray animal",
         content: [
-            "State allows components to keep track of dynamic data.",
-            "useState hook lets functional components manage state.",
-            "Example:\nconst [count, setCount] = useState(0);",
-            "Updating state triggers a re-render with the new value."
+            "Seeing an injured dog or cat can be scary, especially if you do not know what to do.",
+            "The most important and first thing to do is to stay calm.",
+            "Here are first aid steps you can take: approach the animal slowly and gently, speak in a soft voice to avoid scaring them further, and call a local veterinarian, animal rescue group, or barangay office.",
+            "You do not have to treat the injury yourself.",
+            "Asking for help and reporting the situation is already a responsible and caring action."
+        ]
+    },
+    {
+        name: "why-spaying-neutering-strays-matters",
+        title: "Why spaying and neutering strays matters",
+        content: [
+            "Many stray dogs and cats are born on the streets.",
+            "One female dog or cat can have many babies in a short time, and most of them will also end up homeless.",
+            "This is one of the main reasons why the number of strays keeps growing in the Philippines.",
+            "Spaying and neutering mean stopping animals from having more babies.",
+            "It does not make them weak or less loving. In fact, it helps them live healthier and calmer lives.",
+            "Many local vets, LGUs, and animal groups offer low-cost or free spay and neuter programs.",
+            "Helping spread information about these programs is already a big help.",
+            "Spaying and neutering give stray dogs and cats a better chance at a safer life."
         ]
     }
 ];
