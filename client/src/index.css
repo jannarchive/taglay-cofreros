@@ -128,19 +128,6 @@ img {
   color: var(--color-text-secondary);
 }
 
-.pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: rgba(97, 219, 251, 0.12);
-  color: var(--color-primary-dark);
-  font-weight: 600;
-  font-size: 0.85rem;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
 .button-link {
   display: inline-flex;
   align-items: center;
@@ -170,12 +157,28 @@ img {
   background: transparent;
   color: var(--color-primary-dark);
   border-color: var(--color-primary);
+  box-shadow: 0 15px 30px rgba(97, 219, 251, 0.25);
 }
 
 .button-link.secondary:hover {
   background: rgba(17, 43, 50, 0.08);
   color: var(--color-text-secondary);
   border-color: var(--color-primary-dark);
+  box-shadow: 0 15px 32px rgba(0, 167, 211, 0.3);
+}
+
+.button-link.read-article {
+  background: transparent;
+  color: var(--color-primary-dark);
+  border-color: var(--color-primary);
+  box-shadow: 0 15px 30px rgba(97, 219, 251, 0.25);
+}
+
+.button-link.read-article:hover {
+  background: rgba(17, 43, 50, 0.08);
+  color: var(--color-text-secondary);
+  border-color: var(--color-primary-dark);
+  box-shadow: 0 15px 32px rgba(0, 167, 211, 0.3);
 }
 
 .button-link:hover {
