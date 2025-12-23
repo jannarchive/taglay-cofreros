@@ -100,7 +100,7 @@ function HomePage() {
             <div key={article.name} className="article-preview">
               <h3>{article.title}</h3>
               <p>{article.content[0].substring(0, 150)}...</p>
-              <Link to={`/articles/${article.name}`} className="button-link read-article">
+              <Link to={`/articles/${article.name}`} className="button-link secondary">
                 Read article
               </Link>
             </div>

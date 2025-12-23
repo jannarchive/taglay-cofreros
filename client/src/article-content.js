@@ -51,8 +51,8 @@ const articles = [
         ]
     },
     {
-        name: "why-spaying-neutering-strays-matters",
-        title: "Why spaying and neutering strays matters",
+        name: "why-spaying-neutering-stray-dogs-and-cats-matters",
+        title: "Why spaying and neutering stray dogs and cats matters",
         content: [
             "Many stray dogs and cats are born on the streets.",
             "One female dog or cat can have many babies in a short time, and most of them will also end up homeless.",

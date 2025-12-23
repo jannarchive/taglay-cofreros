@@ -98,7 +98,7 @@
 }
 
 .stat span {
-  color: var(--muted);
+  color: var(--color-text-secondary);
 }
 
 /* Main Content Section */
@@ -249,11 +249,11 @@
 
 .article-body {
   display: grid;
-  gap: 16px;
+  gap: 16px;;
   padding: 22px 24px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: var(--color-secondary);
   box-shadow: var(--shadow);
 }
 
@@ -286,7 +286,7 @@
   padding: 18px;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: var(--color-secondary);
   box-shadow: var(--shadow);
 }
 

@@ -71,12 +71,10 @@ function ArticlePage() {
         <p className="eyebrow">Article</p>
         <h1>{article.title}</h1>
         <div className="article-meta">
-          <span className="pill">React</span>
-          <span className="muted">{minutes} min read</span>
+          <span className="minute-read">{minutes} min read</span>
         </div>
         <p className="lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus egestas blandit
-          fringilla platea quam vel.
+          Articles that help you understand and care for animals better.
         </p>
       </div>
 
@@ -85,13 +83,12 @@ function ArticlePage() {
           <p key={`${article.name}-${idx}`}>{paragraph}</p>
         ))}
         <div className="card callout">
-          <h3>Want another angle?</h3>
+          <h3>Want to read more?</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit amet nisl eu condimentum
-            tincidunt pulvinar sed commodo.
+            More stories. More impact. Browse all articles.
           </p>
           <Link to="/articles" className="button-link primary">
-            Browse more articles
+            Browse articles
           </Link>
         </div>
       </div>

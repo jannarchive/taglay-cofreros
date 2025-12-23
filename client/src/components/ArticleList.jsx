@@ -16,7 +16,7 @@ function ArticleList({ articles }) {
             className="article-card"
           >
             <div className="article-card__meta">
-              <span className="pill">React guide</span>
+              <span className="pill">Stories with heart</span>
               <span className="muted">{minutes} min read</span>
             </div>
             <h3>{article.title}</h3>

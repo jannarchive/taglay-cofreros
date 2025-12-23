@@ -12,19 +12,18 @@ function Footer() {
                 <div className="footer-section">
                     <h4>About</h4>
                     <p>
-                        Curating concise React know-how and tasteful UI ideas for builders who want
-                        to ship fast without looking generic.
+                        We bring awareness to the lives of stray dogs and cats and inspire everyone to take small, meaningful actions.
                     </p>
                 </div>
                 <div className="footer-section">
                     <h4>Contact</h4>
-                    <p>Email: jannacofreros@company.com</p>
+                    <p>Email: jannacofreros@gmail.com</p>
                     <p>Phone: 09**-***-****</p>
                 </div>
                 <div className="footer-section">
                     <h4>Follow Us</h4>
                     <div className="social-links">
-                        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                        <a href="https://www.linkedin.com/in/janna-victoria-cofreros/" target="_blank" rel="noopener noreferrer">
                             <FontAwesomeIcon icon={faLinkedin} />
                         </a>
                         <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
@@ -37,7 +36,7 @@ function Footer() {
                 </div>
             </div>
             <div className="footer-bottom">
-                    <p>&copy; {currentYear} Your Company Name. All rights reserved.</p>
+                    <p>&copy; {currentYear} JVPC. All rights reserved.</p>
             </div>
         </footer>
     );

@@ -6,10 +6,10 @@
 
 .article-card {
   position: relative;
-  padding: 18px;
+  padding: 18px;;
   border-radius: var(--radius);
   border: 1px solid var(--border);
-  background: var(--surface);
+  background: var(--color-secondary);
   box-shadow: var(--shadow);
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }

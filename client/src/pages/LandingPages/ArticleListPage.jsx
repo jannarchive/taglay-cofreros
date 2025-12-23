@@ -38,10 +38,9 @@ function ArticleListPage() {
     <div className="page">
       <div className="page-header">
         <p className="eyebrow">Library</p>
-        <h1>Articles crafted for UI-minded developers.</h1>
+        <h1>Every stray dogs and cats has a story. This is where they are told.</h1>
         <p className="lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Semper massa sit a, nunc volutpat
-          elit tortor.
+          Discover stories, tips, and ways to help paws in need today.
         </p>
       </div>
 
@@ -56,11 +55,10 @@ function ArticleListPage() {
       <div className="cta-banner">
         <h3>Looking for more?</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel purus faucibus neque sed
-          elementum feugiat.
+          Learn how The Pawradise Project began. Read our story.
         </p>
-        <Link to="/about" className="button-link secondary">
-          Meet the crew
+        <Link to="/about" className="button-link article-about">
+          About the project
         </Link>
       </div>
     </div>
