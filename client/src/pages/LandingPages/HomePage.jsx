@@ -72,7 +72,7 @@ function HomePage() {
             <div className="feature-icon"></div>
             <h3>Care starts with knowledge</h3>
             <p>
-              Understanding the lives of strays <br/> is the first step to change.
+              Understanding the lives of stray dogs <br/> and cats is the first step to change.
             </p>
           </div>
           <div className="feature-card">
