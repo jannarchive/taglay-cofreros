@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { fetchArticles, createArticle, updateArticle, toggleArticleStatus } from '../../services/ArticleService';
+import { fetchArticles, createArticle, updateArticle, toggleArticleStatus, deleteArticle } from '../../services/ArticleService';
 import { DataGrid } from '@mui/x-data-grid';
 import {
   Button,
@@ -9,6 +9,11 @@ import {
   Box,
   TextField,
   Switch,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  DialogActions,
 } from '@mui/material';
 import AddCircleIcon from '@mui/icons-material/AddCircle';
 
@@ -30,6 +35,8 @@ function DashArticleListPage() {
   const [open, setOpen] = useState(false);
   const [isEditing, setIsEditing] = useState(false);
   const [editArticleId, setEditArticleId] = useState(null);
+  const [deleteDialogOpen, setDeleteDialogOpen] = useState(false); 
+  const [articleToDelete, setArticleToDelete] = useState(null);
   const [newArticle, setNewArticle] = useState({
     name: '',
     title: '',
@@ -103,6 +110,33 @@ function DashArticleListPage() {
     }
   };
 
+  const handleDeleteClick = (id) => {
+    setArticleToDelete(id);
+    setDeleteDialogOpen(true);
+  };
+
+  const handleDeleteConfirm = async () => {
+  try {
+    console.log('Attempting to delete article with ID:', articleToDelete);
+    const response = await deleteArticle(articleToDelete);
+    console.log('Delete response:', response);
+    loadArticles();
+    setDeleteDialogOpen(false);
+    setArticleToDelete(null);
+  } catch (error) {
+    console.error('Error deleting article:', error);
+    console.error('Error response:', error.response?.data);
+    console.error('Error status:', error.response?.status);
+    alert(`Failed to delete article: ${error.response?.data?.message || error.message}`);
+  }
+};
+
+  const handleDeleteCancel = () => {
+    setDeleteDialogOpen(false);
+    setArticleToDelete(null);
+  };
+
+
   const columns = [
     { field: 'name', headerName: 'Name', flex: 1 },
     { field: 'title', headerName: 'Title', flex: 1 },
@@ -125,6 +159,9 @@ function DashArticleListPage() {
         <Stack direction="row" spacing={1}>
           <Button variant="contained" size="small" onClick={() => handleEdit(params.row._id)}>
             Edit
+          </Button>
+          <Button variant="contained" size="small" color="error" onClick={() => handleDeleteClick(params.row._id)}>
+            Delete
           </Button>
         </Stack>
       ),
@@ -189,6 +226,23 @@ function DashArticleListPage() {
           </Stack>
         </Box>
       </Modal>
+
+      <Dialog open={deleteDialogOpen} onClose={handleDeleteCancel}>
+        <DialogTitle>Delete Article</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Are you sure you want to delete this article? This action cannot be undone.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={handleDeleteCancel} color="primary">
+            Cancel
+          </Button>
+          <Button onClick={handleDeleteConfirm} color="error" variant="contained">
+            Delete
+          </Button>
+        </DialogActions>
+      </Dialog>
     </>
   );
 }
